@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Aplec del Caragol</title>
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/icono.png" class="logo" alt="Logo Aplec del Caragol">
+        <h1>Aplec del Caragol</h1>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="./Inicio.html">Inicio</a></li>
+            <li><a href="./Fechas.html">Fechas</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./galeria.html">Galería</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./registro.html" class="active">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>¡Regístrate en el Aplec!</h2>
+                <p>Completa el formulario para registrarte en nuestro evento. Es rápido y gratuito.</p>
+
+                <form action="URL_DEL_SERVIDOR" method="POST" class="registro">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error">El formato del correo debe ser usuario@dominio.ext</span>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="confirmar-contraseña">Confirmar contraseña:</label>
+                        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+                        <span class="error-message" id="password-error">Las contraseñas no coinciden</span>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <button type="submit">Registrarse</button>
+                    </div>
+                </form>
+
+                <p style="margin-top: 20px; color: #666; font-size: 0.9em;">
+                    Al registrarte, aceptas nuestros <a href="./Términos y Condiciones.html" style="color: #f9c476;">Términos y Condiciones</a>
+                    y nuestra <a href="./Política de Privacidad.html" style="color: #f9c476;">Política de Privacidad</a>.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" title="Facebook">f</a>
+            <a href="https://twitter.com" title="Twitter">𝕏</a>
+            <a href="https://instagram.com" title="Instagram"><img src="./imagenes/instagram.png" alt="Instagram" class="instagram-icon"></a>
+            <a href="https://youtube.com" title="YouTube">▶</a>
+        </div>
+        <div class="footer-links">
+            <a href="./Términos y Condiciones.html">Términos y Condiciones</a>
+            <a href="./Política de Cookies.html">Política de Cookies</a>
+            <a href="./Política de Privacidad.html">Política de Privacidad</a>
+        </div>
+        <p>© 2026 Carlos Mayorga Fernández y Joaquín Torres Junco. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

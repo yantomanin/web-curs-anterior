@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Aplec del Caragol</title>
+    <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/icono.png" class="logo" alt="Logo Aplec del Caragol">
+        <h1>Aplec del Caragol</h1>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="./Inicio.html">Inicio</a></li>
+            <li><a href="./Fechas.html">Fechas</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="./galeria.html" class="active">Galería</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Slider de Eventos Anteriores</h2>
+                <p>Disfruta de una selección de momentos memorables de ediciones pasadas del Aplec del Caragol.</p>
+                
+                <div class="slider-container">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <input type="radio" name="slider" id="slide5">
+                    
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="./imagenes/carrusel1.png" alt="Deliciosa llauna de caracoles">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagenes/carrusel2.png" alt="Grupo de amigos celebrando">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagenes/carrusel3.png" alt="Desfile tradicional de collas">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagenes/carrusel4.png" alt="Preparación de caracoles a fuego de leña">
+                        </div>
+                        <div class="slide">
+                            <img src="./imagenes/carrusel5.png" alt="Concierto nocturno y baile">
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <label for="slide1" class="control-btn" title="Ver imagen 1"></label>
+                        <label for="slide2" class="control-btn" title="Ver imagen 2"></label>
+                        <label for="slide3" class="control-btn" title="Ver imagen 3"></label>
+                        <label for="slide4" class="control-btn" title="Ver imagen 4"></label>
+                        <label for="slide5" class="control-btn" title="Ver imagen 5"></label>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2>Cuadrícula de Imágenes del Evento</h2>
+                <p>Haz clic en cualquiera de las imágenes para verlas en pantalla completa.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./imagenes/carrusel1.png" class="gallery-img" alt="Caracoles tradicionales a la llauna">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./imagenes/carrusel2.png" class="gallery-img" alt="Ambiente festivo en el recinto">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./imagenes/carrusel3.png" class="gallery-img" alt="Desfile y colorido popular">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./imagenes/carrusel4.png" class="gallery-img" alt="Cocinando para toda la colla">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" title="Facebook">f</a>
+            <a href="https://twitter.com" title="Twitter">𝕏</a>
+            <a href="https://instagram.com" title="Instagram"><img src="./imagenes/instagram.png" alt="Instagram" class="instagram-icon"></a>
+            <a href="https://youtube.com" title="YouTube">▶</a>
+        </div>
+        <div class="footer-links">
+            <a href="./Términos y Condiciones.html">Términos y Condiciones</a>
+            <a href="./Política de Cookies.html">Política de Cookies</a>
+            <a href="./Política de Privacidad.html">Política de Privacidad</a>
+        </div>
+        <p>© 2026 Carlos Mayorga Fernández y Joaquín Torres Junco. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
